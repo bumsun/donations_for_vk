@@ -86,6 +86,9 @@ public class DataProcessor {
         this.donationTarget = null; // required
         this.donationDescription = null; // required
         this.donationDate = null; // нужно если donationType == 1
+        this.currentAmount = 0; // required
+        this.postText = null; // required
+        this.percentProgress = 0;
     }
 
     public Integer getDonationAmount() {

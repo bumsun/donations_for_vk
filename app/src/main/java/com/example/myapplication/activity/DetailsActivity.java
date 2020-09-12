@@ -113,8 +113,7 @@ public class DetailsActivity extends AppCompatActivity {
                     progressView.animate().scaleX(percentProgress).setDuration(100);
 
                     Log.d("myLogs","getCurrentAmount = " +  DataProcessor.getInstance().getCurrentAmount());
-                    whiteProgressTV.setText(DataProcessor.getInstance().getCurrentAmount() + "₽");
-                    greenProgressTV.setText(DataProcessor.getInstance().getCurrentAmount() + "₽");
+
 
                     DataProcessor.getInstance().setPercentProgress(percentProgress);
                     updateProgress();
@@ -172,6 +171,8 @@ public class DetailsActivity extends AppCompatActivity {
             successTV.setVisibility(View.VISIBLE);
             successTV.setText(DataProcessor.getInstance().getDonationAmount() + " ₽ собраны!");
         }
+        whiteProgressTV.setText(DataProcessor.getInstance().getCurrentAmount() + "₽");
+        greenProgressTV.setText(DataProcessor.getInstance().getCurrentAmount() + "₽");
     }
 
 

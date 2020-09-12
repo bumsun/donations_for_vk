@@ -67,6 +67,7 @@ public class CreatePostActivity extends BaseActivity {
                 }
                 Intent intent = new Intent(getActivity(), FeedActivity.class);
                 startActivity(intent);
+                finish();
             }
         });
 

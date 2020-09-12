@@ -23,6 +23,7 @@ public class SelectTypeDonation extends BaseActivity {
         targetDonatLL.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                finish();
                 DataProcessor.getInstance().newDonation(1);
                 Intent intent = new Intent(getActivity(), FormDonationActivity.class);
                 startActivity(intent);
@@ -32,6 +33,7 @@ public class SelectTypeDonation extends BaseActivity {
         regularDonatLL.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                finish();
                 DataProcessor.getInstance().newDonation(2);
                 Intent intent = new Intent(getActivity(), FormDonationActivity.class);
                 startActivity(intent);

@@ -139,9 +139,11 @@ public class FormDonationActivity extends BaseActivity {
                 if(DataProcessor.getInstance().getDonationType() == 1){
                     intent = new Intent(getActivity(), SelectDateActivity.class);
                     startActivity(intent);
+                    finish();
                 }else{
                     intent = new Intent(getActivity(), CreatePostActivity.class);
                     startActivity(intent);
+                    finish();
                 }
             }
         });

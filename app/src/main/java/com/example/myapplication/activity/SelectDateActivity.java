@@ -72,6 +72,7 @@ public class SelectDateActivity extends BaseActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(getActivity(), CreatePostActivity.class);
                 startActivity(intent);
+                finish();
             }
         });
     }
